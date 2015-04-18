@@ -39,6 +39,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if indexPath.row == 0{
             performSegueWithIdentifier("First", sender: tableView)
         }
+        if indexPath.row == 1{
+            performSegueWithIdentifier("Second", sender: tableView)
+        }
+
+        if indexPath.row == 2{
+            performSegueWithIdentifier("Third", sender: tableView)
+        }
+
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
