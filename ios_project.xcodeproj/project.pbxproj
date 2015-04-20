@@ -13,6 +13,7 @@
 		946B69671AE2E2E2004257E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946B69661AE2E2E2004257E3 /* Images.xcassets */; };
 		946B696A1AE2E2E2004257E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946B69681AE2E2E2004257E3 /* LaunchScreen.xib */; };
 		946B69761AE2E2E3004257E3 /* ios_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946B69751AE2E2E3004257E3 /* ios_projectTests.swift */; };
+		94BA75301AE5673F00B97BEF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA752F1AE5673F00B97BEF /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		946B696F1AE2E2E3004257E3 /* ios_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		946B69741AE2E2E3004257E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		946B69751AE2E2E3004257E3 /* ios_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_projectTests.swift; sourceTree = "<group>"; };
+		94BA752F1AE5673F00B97BEF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				946B69661AE2E2E2004257E3 /* Images.xcassets */,
 				946B69681AE2E2E2004257E3 /* LaunchScreen.xib */,
 				946B695D1AE2E2E2004257E3 /* Supporting Files */,
+				94BA752F1AE5673F00B97BEF /* FirstViewController.swift */,
 			);
 			path = ios_project;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BA75301AE5673F00B97BEF /* FirstViewController.swift in Sources */,
 				946B69621AE2E2E2004257E3 /* ViewController.swift in Sources */,
 				946B69601AE2E2E2004257E3 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				946B697B1AE2E2E3004257E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		946B697C1AE2E2E3004257E3 /* Build configuration list for PBXNativeTarget "ios_projectTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				946B697E1AE2E2E3004257E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
