@@ -14,6 +14,9 @@
 		946B696A1AE2E2E2004257E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946B69681AE2E2E2004257E3 /* LaunchScreen.xib */; };
 		946B69761AE2E2E3004257E3 /* ios_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946B69751AE2E2E3004257E3 /* ios_projectTests.swift */; };
 		94BA75301AE5673F00B97BEF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA752F1AE5673F00B97BEF /* FirstViewController.swift */; };
+		94BA75601AE5DADB00B97BEF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA755F1AE5DADB00B97BEF /* SecondViewController.swift */; };
+		94BA75621AE5DB5F00B97BEF /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA75611AE5DB5F00B97BEF /* ThirdViewController.swift */; };
+		94BA75641AE5DB6B00B97BEF /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BA75631AE5DB6B00B97BEF /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		946B69741AE2E2E3004257E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		946B69751AE2E2E3004257E3 /* ios_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_projectTests.swift; sourceTree = "<group>"; };
 		94BA752F1AE5673F00B97BEF /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		94BA755F1AE5DADB00B97BEF /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		94BA75611AE5DB5F00B97BEF /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		94BA75631AE5DB6B00B97BEF /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				946B69681AE2E2E2004257E3 /* LaunchScreen.xib */,
 				946B695D1AE2E2E2004257E3 /* Supporting Files */,
 				94BA752F1AE5673F00B97BEF /* FirstViewController.swift */,
+				94BA755F1AE5DADB00B97BEF /* SecondViewController.swift */,
+				94BA75611AE5DB5F00B97BEF /* ThirdViewController.swift */,
+				94BA75631AE5DB6B00B97BEF /* FourthViewController.swift */,
 			);
 			path = ios_project;
 			sourceTree = "<group>";
@@ -215,7 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94BA75641AE5DB6B00B97BEF /* FourthViewController.swift in Sources */,
+				94BA75601AE5DADB00B97BEF /* SecondViewController.swift in Sources */,
 				94BA75301AE5673F00B97BEF /* FirstViewController.swift in Sources */,
+				94BA75621AE5DB5F00B97BEF /* ThirdViewController.swift in Sources */,
 				946B69621AE2E2E2004257E3 /* ViewController.swift in Sources */,
 				946B69601AE2E2E2004257E3 /* AppDelegate.swift in Sources */,
 			);

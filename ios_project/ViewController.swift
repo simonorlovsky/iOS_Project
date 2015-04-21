@@ -13,8 +13,12 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     
-    var items: [String] = ["Check", "it", "out"]
+    var items: [String] = ["First", "Second", "Third", "Fourth"]
     
+    @IBAction func aboutPressed(sender: AnyObject) {
+        performSegueWithIdentifier("About", sender: tableView)
+        println("About clicked")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,6 +50,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if indexPath.row == 2{
             performSegueWithIdentifier("Third", sender: tableView)
         }
+        
+        if indexPath.row == 3{
+            performSegueWithIdentifier("Fourth", sender: tableView)
+        }
+
 
     }
     override func didReceiveMemoryWarning() {
