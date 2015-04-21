@@ -172,9 +172,47 @@
                     <view key="view" contentMode="scaleToFill" id="cRi-tX-FQB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo5-PH-qwf">
+                                <rect key="frame" x="276" y="258" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SubmitPressed:" destination="Mwj-p1-mTO" eventType="touchUpInside" id="IgN-bi-1mr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l9j-sf-oQM">
+                                <rect key="frame" x="252" y="198" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Derivative Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0R-3X-I6H">
+                                <rect key="frame" x="221" y="149" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Result" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNo-XE-Sh0">
+                                <rect key="frame" x="276" y="305" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.2666666667" green="0.65490196079999996" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Zo5-PH-qwf" secondAttribute="centerX" constant="-0.5" id="Oje-4r-6ID"/>
+                            <constraint firstAttribute="centerX" secondItem="nNo-XE-Sh0" secondAttribute="centerX" constant="-0.5" id="cfA-ag-JNs"/>
+                            <constraint firstAttribute="centerX" secondItem="c0R-3X-I6H" secondAttribute="centerX" constant="-0.5" id="hZB-lN-sQg"/>
+                            <constraint firstAttribute="centerX" secondItem="l9j-sf-oQM" secondAttribute="centerX" constant="-0.5" id="tYW-h3-zmR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Third" id="VAg-9Y-JDj"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="nNo-XE-Sh0" id="fRM-xb-gXA"/>
+                        <outlet property="textField" destination="l9j-sf-oQM" id="MtZ-bB-9fN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLJ-yr-IX2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
