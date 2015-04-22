@@ -20,6 +20,15 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uVD-5s-BeR">
                                 <rect key="frame" x="24" y="97" width="552" height="441"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="3Px-im-9y8">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Px-im-9y8" id="YXZ-e1-AhF">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="HUu-mr-IEj"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="DtR-MI-auL"/>
@@ -91,16 +100,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Project by Simon Orlovsky" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBP-lY-Ns2">
-                                <rect key="frame" x="182" y="289" width="236" height="21"/>
+                                <rect key="frame" x="182" y="226" width="236" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8d1-SA-A1m"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_carleton" translatesAutoresizingMaskIntoConstraints="NO" id="nuy-X2-8At">
+                                <rect key="frame" x="202" y="264" width="196" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="IsR-HI-tPm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="SBP-lY-Ns2" secondAttribute="centerX" id="EeE-Ti-UVo"/>
-                            <constraint firstAttribute="centerY" secondItem="SBP-lY-Ns2" secondAttribute="centerY" constant="0.5" id="GVN-0W-xAA"/>
+                            <constraint firstItem="4RT-Rp-IdO" firstAttribute="top" secondItem="nuy-X2-8At" secondAttribute="bottom" constant="148" id="2Eo-Wg-akM"/>
+                            <constraint firstItem="SBP-lY-Ns2" firstAttribute="top" secondItem="9jB-R5-oXf" secondAttribute="bottom" constant="162" id="C6m-y5-3ID"/>
+                            <constraint firstItem="nuy-X2-8At" firstAttribute="top" secondItem="SBP-lY-Ns2" secondAttribute="bottom" constant="17" id="MV6-55-4CA"/>
+                            <constraint firstItem="SBP-lY-Ns2" firstAttribute="centerX" secondItem="LZZ-OJ-Q65" secondAttribute="centerX" id="RMQ-bZ-RaF"/>
+                            <constraint firstItem="nuy-X2-8At" firstAttribute="centerX" secondItem="SBP-lY-Ns2" secondAttribute="centerX" id="bK8-de-Vxt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="cg2-aB-Has"/>
@@ -368,6 +389,7 @@
     <resources>
         <image name="cow" width="300" height="168"/>
         <image name="dog" width="300" height="168"/>
+        <image name="profile_carleton" width="250" height="250"/>
         <image name="toff" width="500" height="375"/>
     </resources>
 </document>
