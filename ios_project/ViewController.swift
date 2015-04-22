@@ -13,7 +13,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     
-    var items: [String] = ["Scroll", "Webview", "Textfields"]
+    var items: [String] = ["Alerts/ScrollView", "Webview", "Textfields"]
     
     @IBAction func aboutPressed(sender: AnyObject) {
         performSegueWithIdentifier("About", sender: tableView)
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("You selected cell #\(indexPath.row)!")
         if indexPath.row == 0{
-            performSegueWithIdentifier("Scroll", sender: tableView)
+            performSegueWithIdentifier("Alerts", sender: tableView)
         }
         if indexPath.row == 1{
             performSegueWithIdentifier("Webview", sender: tableView)
