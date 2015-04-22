@@ -9,11 +9,17 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    let URL = "http://www.dormcuts.com"
 
+    @IBOutlet var Web: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        let URLRequest = NSURL(string: URL)
+        let Request = NSURLRequest(URL: URLRequest!)
+        Web.loadRequest(Request)
+        
     }
 
     override func didReceiveMemoryWarning() {

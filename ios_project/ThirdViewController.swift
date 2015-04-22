@@ -12,6 +12,7 @@ class ThirdViewController: UIViewController {
 
     @IBOutlet var textField: UITextField!
     @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var displacementField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +25,15 @@ class ThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        textField.resignFirstResponder()
+        displacementField.resignFirstResponder()
+    }
+    
     @IBAction func SubmitPressed(sender: AnyObject) {
         println(textField.text)
+        var message = textField.text
+        
         resultLabel.text = textField.text
     }
     

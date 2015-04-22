@@ -13,7 +13,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     
-    var items: [String] = ["First", "Second", "Third", "Fourth"]
+    var items: [String] = ["First", "Dormcuts", "Caesar Cipher", "Fourth"]
     
     @IBAction func aboutPressed(sender: AnyObject) {
         performSegueWithIdentifier("About", sender: tableView)
@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
 
         if indexPath.row == 2{
-            performSegueWithIdentifier("Third", sender: tableView)
+            performSegueWithIdentifier("Caesar Cipher", sender: tableView)
         }
         
         if indexPath.row == 3{
