@@ -13,7 +13,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     
-    var items: [String] = ["First", "Dormcuts", "Caesar Cipher", "Fourth"]
+    var items: [String] = ["Scroll", "Webview", "Textfields"]
     
     @IBAction func aboutPressed(sender: AnyObject) {
         performSegueWithIdentifier("About", sender: tableView)
@@ -41,20 +41,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("You selected cell #\(indexPath.row)!")
         if indexPath.row == 0{
-            performSegueWithIdentifier("First", sender: tableView)
+            performSegueWithIdentifier("Scroll", sender: tableView)
         }
         if indexPath.row == 1{
-            performSegueWithIdentifier("Second", sender: tableView)
+            performSegueWithIdentifier("Webview", sender: tableView)
         }
 
         if indexPath.row == 2{
-            performSegueWithIdentifier("Caesar Cipher", sender: tableView)
+            performSegueWithIdentifier("Textfields", sender: tableView)
         }
         
-        if indexPath.row == 3{
-            performSegueWithIdentifier("Fourth", sender: tableView)
-        }
-
 
     }
     override func didReceiveMemoryWarning() {

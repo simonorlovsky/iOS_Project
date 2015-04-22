@@ -29,12 +29,24 @@ class ThirdViewController: UIViewController {
         textField.resignFirstResponder()
         displacementField.resignFirstResponder()
     }
+    func isNumeric(a: String) -> Bool {
+        if let n = a.toInt() {
+            return true
+        } else {
+            return false
+        }
+    }
     
     @IBAction func SubmitPressed(sender: AnyObject) {
         println(textField.text)
-        var message = textField.text
+        println(displacementField.text)
+        if isNumeric(textField.text) && isNumeric(displacementField.text){
+            resultLabel.text = String(textField.text.toInt()! + displacementField.text.toInt()!)
+        }
+        else{
+            resultLabel.text = "Please enter numeric values"
+        }
         
-        resultLabel.text = textField.text
     }
     
     /*
